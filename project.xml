@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+    <meta title="molecola" package="com.geepers.Molecola" version="1.0.0" />
+    <app main="Molecola" file="Molecola" path="Export" />
+	<!--<windows background="#FFFFFF"/>-->
+	<window width="1024" height="700" if="desktop" />
+	<window width="1024" height="700" if="desktop" />
+    <window width="0" height="0" background="#FFFFFF" if="html5" />
+    <window orientation="landscape" vsync="true" if="cpp"/>
+    <window fps="60" hardware="true" allow-shaders="true" require-shaders="true" depth-buffer="true" stencil-buffer="true" />
+	<window background="#333333"/>
+    <source path="src" />
+    <haxelib name="format" if="html5" />
+    <haxelib name="away3d" />
+    <haxelib name="openfl" />
+	<haxelib name="systools" />
+	<haxelib name="flixel" />
+	<haxelib name="haxeui" />
+	<haxelib name="openfl-nativedialog" />
+    <assets path="embeds" exclude="openfl.svg" />
+    <icon path="embeds/openfl.svg" />
+    <haxedef name="source-map-content" if="html5" />
+    <haxedef name="dom" if="html5" />
+    <android minimum-sdk-version="10" />
+	<open id="open" text="OPEN" x="200" y="40" width="150" height="40" />
+	
+	<mx:Button x="10" y="368" label="Start" id="btnStart"/>
+</project>
